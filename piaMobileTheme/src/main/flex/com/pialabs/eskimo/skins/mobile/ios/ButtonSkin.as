@@ -59,7 +59,7 @@ package com.pialabs.eskimo.skins.mobile.ios
           layoutPaddingLeft = 10;
           layoutPaddingRight = 10;
           measuredDefaultWidth = 58;
-          measuredDefaultHeight = 28;
+          measuredDefaultHeight = 38;
           
           upBorderSkin = com.pialabs.eskimo.skins.mobile.ios.assets.Button_up;
           downBorderSkin = com.pialabs.eskimo.skins.mobile.ios.assets.Button_down;

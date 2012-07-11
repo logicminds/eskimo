@@ -6,7 +6,7 @@
 @namespace ios "com.pialabs.eskimo.skins.mobile.ios.*";
 @namespace ns "http://piaction.com";
 
-@media (os-platform:"IOS")
+@media (os-platform:"IOS"), (os-platform:"Windows"), (os-platform:"Macintosh"), (os-platform:"Linux" )
 {
     global
     {
@@ -118,6 +118,26 @@
         yesButtonStyleName: "yesButtonStyle";
         noButtonStyleName: "noButtonStyle";
     }
+	controls|SkinnableInputDialog
+	{
+		skinClass: ClassReference("com.pialabs.eskimo.skins.mobile.ios.InputDialogSkin");
+		backgroundColor: #031037;
+		backgroundAlpha: 0.8;
+		okButtonStyleName: "okButtonStyle";
+		cancelButtonStyleName: "cancelButtonStyle";
+		yesButtonStyleName: "yesButtonStyle";
+		noButtonStyleName: "noButtonStyle";
+	}
+	controls|SkinnablePasswordInputDialog
+	{
+		skinClass: ClassReference("com.pialabs.eskimo.skins.mobile.ios.PasswordInputDialogSkin");
+		backgroundColor: #031037;
+		backgroundAlpha: 0.8;
+		okButtonStyleName: "okButtonStyle";
+		cancelButtonStyleName: "cancelButtonStyle";
+		yesButtonStyleName: "yesButtonStyle";
+		noButtonStyleName: "noButtonStyle";
+	}
     
     .okButtonStyle
     {
@@ -224,7 +244,18 @@
         backgroundColor: #424242;
         backgroundAlpha: 0.9;
     }
-    
+	controls|SkinnableInputDialog
+	{
+		skinClass: ClassReference("com.pialabs.eskimo.skins.mobile.android.InputDialogSkin");
+		backgroundColor: #424242;
+		backgroundAlpha: 0.9;
+	}
+	controls|SkinnablePasswordInputDialog
+	{
+		skinClass: ClassReference("com.pialabs.eskimo.skins.mobile.android.PasswordInputDialogSkin");
+		backgroundColor: #424242;
+		backgroundAlpha: 0.9;
+	}
     
     components|UniqueChoiceList
     {
